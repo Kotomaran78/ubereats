@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+    z-index: 1000;
+}
+
+.head {
+    height: 72px;
+}
+
+.right-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.knopka {
+    margin-right: 8px;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: white; /* фон кнопки */
+    padding: .9em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #1D1D1D;
+}
+
+.knopka:hover {
+    background: #e6e6e6;
+}
+
+.knopka:active {
+    background: #E0E0E0;
+}
+
+.basket {
+    margin: 0 10px 0 18px;
+}
+
+
+.find {
+    margin-top: 127px;
+}
+
+.search {
+    width: 100%;
+    border: none;
+    outline: none;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #626262;
+
+}
+
+/*при фокусе на поиск placeholder исчезнет с затуханием*/
+.search::-webkit-input-placeholder       {opacity: .5; transition: opacity 0.3s ease;}
+.search::-moz-placeholder                {opacity: .5; transition: opacity 0.3s ease;}
+.search:-moz-placeholder                 {opacity: .5; transition: opacity 0.3s ease;}
+.search:-ms-input-placeholder            {opacity: .5; transition: opacity 0.3s ease;}
+.search:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.search:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.search:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.search:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+/*если не помещается текст ставит троеточие*/
+.search[placeholder]          {text-overflow:ellipsis;}
+.search::-moz-placeholder     {text-overflow:ellipsis;}
+.search:-moz-placeholder      {text-overflow:ellipsis;}
+.search:-ms-input-placeholder {text-overflow:ellipsis;}
+
+/*отключает крестик*/
+.search[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+.search[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+.search::-webkit-search-decoration,
+.search::-webkit-search-cancel-button,
+.search::-webkit-search-results-button,
+.search::-webkit-search-results-decoration { display: none; }
+
+
+
+h2 {
+    margin: 16px 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: #1D1D1D;
+}
+
+.card {
+    margin-top: 56px;
+    margin-bottom: 48px;
+}
+
+.card-item {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 16px;
+}
+
+.title {
+    margin: 0;
+    padding-bottom: 4px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1D1D1D;
+}
+
+.sub-title {
+    margin: 0;
+    padding-bottom: 4px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #626262;
+}
+
+.time {
+    margin: 0;
+    padding-bottom: 4px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #1D1D1D;
+}
+
+footer {
+    background: #262626;
+    padding: 56px 0 16px 0;
+}
+
+.footer-line, .footer-line-2, .footer-line-3 {
+    margin: 40px 0;
+    border-top:1px solid #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+
+.footer-line-2 {
+    margin: 17px 0 25px 0;
+}
+
+.footer-line-3 {
+    margin: 25px 0 40px 0;
+}
+
+.footer-menu {
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.footer-menu p {
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+.select {
+    display: block;
+    width: 100%; /* от ширины блока div */
+    padding: 12px 30px 12px 48px;/* отступы от текста до рамки */
+    border: none; /* рамка */
+    border-radius: 2px;/* скругление полей формы */
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;/* убираем дефолнтные стрелочки */
+
+
+    /*цвет фона, стрелка*/
+    background: #3B3B3B;
+    background-image: url("img/Shape.svg"), url("img/planet.svg");
+    background-position: right 8px center, 16px center;
+    background-repeat: no-repeat, no-repeat;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.footer-UberEats{
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer-UberEats  p{
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.green-symbol {
+    color: #49A144;
+    padding-right: 1px;
+}
+
+.footer-info-links {
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+.footer-info-links p {
+    margin: 0 0 24px 0;
+}
